@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+
+;Win32Separation
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+"Win32Separation"=dword:00000026

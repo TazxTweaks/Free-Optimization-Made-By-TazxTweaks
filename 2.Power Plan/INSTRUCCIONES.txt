@@ -1,0 +1,3 @@
+1.Copia el siguiente codigo en CMD(Administrador):
+powercfg -import
+2.Arrastre el Power Plan al CMD y presione enter.
