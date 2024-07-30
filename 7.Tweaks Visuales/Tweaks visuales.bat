@@ -1,15 +1,14 @@
 @echo off
 title Desactivando efectos visuales de Windows...
 
-echo Desactiva efectos visuales del sistema
-powercfg -change -monitor-timeout-ac 1
-powercfg -change -monitor-timeout-dc 1
+echo Configurando el PowerPLan 
+powercfg -change -monitor-timeout-ac 0
+powercfg -change -monitor-timeout-dc 0
 
 echo Configura la apariencia de Windows para mejor rendimiento
 echo Configurando opciones de rendimiento...
-SystemPropertiesPerformance.exe /pagefile
+SystemPropertiesPerformance.exe 
 
-echo Desactiva animaciones y transparencias
 echo Desactivando animaciones y transparencias...
 powershell -Command "Start-Process powershell -ArgumentList 'Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize' -Name EnableTransparency -Value 0' -Verb RunAs"
 
